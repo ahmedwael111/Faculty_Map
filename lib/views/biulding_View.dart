@@ -1,6 +1,7 @@
 import 'package:accordion/accordion.dart';
 import 'package:facultymap/widgets/accordition.dart';
 import 'package:facultymap/widgets/building_item.dart';
+import 'package:facultymap/widgets/coustom_map_bottom.dart';
 import 'package:flutter/material.dart';
 
 class BiuldingView extends StatelessWidget {
@@ -33,6 +34,8 @@ class BiuldingView extends StatelessWidget {
           },
         ),
       ),
+      floatingActionButton: const CostomMapPottom(),
+      floatingActionButtonLocation: FloatingActionButtonLocation.miniStartFloat,
     );
   }
 }

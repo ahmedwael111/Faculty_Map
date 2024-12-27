@@ -72,6 +72,7 @@ class HomePage extends StatelessWidget {
         ),
       ),
       floatingActionButton: const CostomMapPottom(),
+      floatingActionButtonLocation: FloatingActionButtonLocation.miniStartFloat,
     );
   }
 }

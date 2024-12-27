@@ -1,28 +1,25 @@
 import 'package:facultymap/constants.dart';
-import 'package:facultymap/views/search_view.dart';
 import 'package:flutter/material.dart';
 // import 'package:recipes_app/constants.dart';
 // import 'package:recipes_app/views/search_view.dart';
 
-class CostomTextfield extends StatelessWidget {
-  const CostomTextfield({
-    super.key,
-  });
-
+class ActiveTextfield extends StatelessWidget {
+  const ActiveTextfield({super.key, this.controller, this.focusNode});
+  final FocusNode? focusNode;
+  final TextEditingController? controller;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.push(context, MaterialPageRoute(
-          builder: (context) {
-            return const SearchView();
-          },
-        ));
+        // Navigator.pushNamed(context, SearchView.id);
       },
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 0),
+        padding: const EdgeInsets.symmetric(horizontal: 20),
         child: TextField(
-          enabled: false, // Disable text editing
+          textAlign: TextAlign.right,
+          focusNode: focusNode,
+          controller: controller,
+          // enabled: false, // Disable text editing
           decoration: InputDecoration(
             filled: true,
             // fillColor: Colors.orange,

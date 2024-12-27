@@ -23,17 +23,17 @@ class CostomMapPottom extends StatelessWidget {
         child: const Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Icon(
+              Icons.location_on_outlined,
+              size: 32,
+              color: Colors.white,
+            ),
+            SizedBox(
+              width: 4,
+            ),
             Text(
               'خريطة الكلية',
               style: TextStyle(color: Colors.white, fontSize: 22),
-            ),
-            SizedBox(
-              width: 12,
-            ),
-            Icon(
-              Icons.location_on_outlined,
-              size: 24,
-              color: Colors.white,
             ),
           ],
         ),
